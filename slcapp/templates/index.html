@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>Index</h1>
+{% endblock %}
+
+{% block content %}
+  <!-- Sidebar -->
+  <nav id="sidebar" class="col-md-3 col-lg-3 d-md-block bg-light sidebar">
+    <div class="position-sticky">
+        <!-- File Path Field -->
+        <div class="p-3">
+          <input type="text" class="form-control" placeholder="Enter file path">
+        </div>
+        <h6>C:\Users\</h6>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span data-feather="file"></span>
+                    My Files
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span data-feather="folder"></span>
+                    Recent Files
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span data-feather="star"></span>
+                    Favorites
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span data-feather="trash"></span>
+                    Trash
+                </a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+
+  <!-- iframe -->
+  <div id="iframe-container" class="flex-grow-1">
+    <iframe src="https://modelviewer.dev/examples/twitter/player.html?src=https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb&poster=https://modelviewer.dev/shared-assets/models/NeilArmstrongPoster.webp&alt=Neil%20Armstrong's%20Spacesuit%20from%20the%20Smithsonian%20Digitization%20Programs%20Office%20and%20National%20Air%20and%20Space%20Museum&environmentImage=https%3A%2F%2Fmodelviewer.dev%2Fshared-assets%2Fenvironments%2Fmoon_1k.hdr" class="w-100 h-100 border" title="Model Viewer" style="border-style:double;"></iframe>
+    <!-- Progress Bar -->
+    <div class="progress mt-2" style="height: 30px;">
+      <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+    </div>
+  </div>
+
+  <!-- Box with Text -->
+  <div class="border p-3 ml-3 d-flex flex-column" style="width: 300px;">
+    <h5>Model Info</h5>
+    <p style="white-space: pre-wrap;"># Vertices:
+# Edges: 
+# Faces: 
+# Triangles:
+    </p>
+    <!-- Buttons -->
+    <div class="mt-auto">
+      <button class="btn btn-secondary btn-block mb-2">Save As...</button>
+      <button class="btn btn-danger btn-block mb-2">TERMINATE</button>
+      <button class="btn btn-success btn-block">START</button>
+  </div>
+</div>
+{% endblock %}
