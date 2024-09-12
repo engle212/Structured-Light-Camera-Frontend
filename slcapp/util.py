@@ -3,6 +3,8 @@
 
 # Establish a connection to Jetson Nano
 # Ethernet, Internet, or USB? Or run frontend on Nano?
+# Past team used SSH with ethernet to USB-C adapter
+# Might as well use wifi adapter once we have it
 def connectToJetson():
 
   return
