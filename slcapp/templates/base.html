@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">-->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.168.0/examples/jsm/"
+        }
+      }
+    </script>
 </head>
 <body>
     <!-- Navigation Bar -->
