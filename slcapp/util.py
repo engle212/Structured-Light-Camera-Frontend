@@ -1,3 +1,4 @@
+import paramiko
 # util.py: Utility functions
 # Maybe make a class here?
 
@@ -6,7 +7,7 @@
 # Past team used SSH with ethernet to USB-C adapter
 # Might as well use wifi adapter once we have it
 def connectToJetson():
-
+  
   return
 
 # Return list of all files on the Jetson
