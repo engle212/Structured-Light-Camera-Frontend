@@ -7,4 +7,5 @@ def create_app(test_config=None):
   
   with app.app_context():
     from slcapp import views
+
   return app

@@ -2,12 +2,11 @@ import paramiko
 # util.py: Utility functions
 # Maybe make a class here?
 
-# Establish a connection to Jetson Nano
-# Ethernet, Internet, or USB? Or run frontend on Nano?
+# Establish a connection to host device
+# Ethernet
 # Past team used SSH with ethernet to USB-C adapter
-# Might as well use wifi adapter once we have it
 def connectToJetson():
-  
+
   return
 
 # Return list of all files on the Jetson
